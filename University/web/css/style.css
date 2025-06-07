@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #1d5586;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.side-top {
+    text-align: center;
+    display: flex;
+    background-color: #04335c;
+    align-items: center;
+    letter-spacing: 0.25px;
+    height: 80px;
+}
+
+.side-top p {
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.side-top img {
+    height: 100px;
+    width: 70px;
+    margin-left: 47px;
+}
+
+.sidebar a {
+    display: contents;
+    color: white;
+    padding: 1px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.sidebar a h3 {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.welcome {
+    height: 70px;
+    padding-left: 150px;
+    align-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.welcome h4 {
+    margin-left: 900px;
+}
+
+.welcome p {
+    position: relative;
+    color: #0000ff;
+    animation: move infinite;
+    animation-duration: 15s;
+    font-size: 20px;
+}
+
+.jaypee {
+    background-color: #1d2d4e;
+    padding: 200px;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.jaypee p {
+    font-size: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a{
+        text-align: center;
+        float: none;
+    }
+}
+
+@keyframes move {
+    0% {left: 0px; top: 0px;}
+    50% {left: 880px; top:0px;}
+    100% {left: 0px; top:0px;}
+}   
+    .dropdown {
+        display: inline-block;
+    }
+    
+    .drop-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 30px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 7%;
+        left: 94%;
+    }
+    
+    .drop-content a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .drop-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .dropdown:hover .drop-content {
+        display: block;
+    }

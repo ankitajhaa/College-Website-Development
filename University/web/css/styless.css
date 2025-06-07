@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+.main-part {
+    flex: 100%;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+.content {
+    white-space: nowrap;
+    animation: scroll-horizontally 25s linear infinite;
+    display: flex;
+    width: calc(100% *4);
+    flex: 100%;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.content img {
+    width: 25%;
+    height: 500px;
+    margin-right: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes scroll-horizontally {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
